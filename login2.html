@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Virtua - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="scripts/login.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="index.html"><h1>VIRTUA</h1></a>
+      <h5>Virtua IV Log</h5>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+            <div id="login-wrapper">
+                <form class="form login-form">
+                    <legend>Sign in to <span class="blue">Virtua</span></legend>
+                    <div class="body">
+                        <div id="message"></div>
+                        <label>Username</label>
+                        <input type="text" name="username" id="username" value ="demo">
+                        <label>Password</label>
+                        <input type="password" id="password" id="password" value= "demo">
+                    </div>
+                    <div class="btnWrapper">                            
+                        <button type="submit" class="btn btn-success" id="userLogin">Login</button>
+                        <div id="registerLink"><a href="register.html">New User? Register here</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="white navbar-fixed-bottom">
+      &copy; <em>Virtua 2015. All rights reserved.
+    </footer>
+</body></html>
