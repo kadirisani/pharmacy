@@ -1,0 +1,32 @@
+CREATE TABLE `users` (
+   `uid` int(11) not null auto_increment,
+   `firstname` varchar(25) not null,
+   `lastname` varchar(25) not null,
+   `email` varchar(100) not null,
+   `username` varchar(15) not null,
+   `password` varchar(15) not null,
+   PRIMARY KEY (`uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=4;
+
+
+
+CREATE TABLE `ivrecords` (
+   `rid` int(11) not null auto_increment,
+   `ivDate` date not null,
+   `ivTime` time not null,
+   `ptName` varchar(50) not null,
+   `ptRoom` int(11) not null,
+   `ivMix` varchar(100) not null,
+   `drugMfr` varchar(100) not null,
+   `drugLot` varchar(25) not null,
+   `drugExp` date not null,
+   `diluent` varchar(100) not null,
+   `dilMfr` varchar(100) not null,
+   `dilLot` varchar(25) not null,
+   `dilExp` date not null,
+   `qty` int(11) not null,
+   `prepBy` varchar(50) not null,
+   `userid` int(11) not null,
+   PRIMARY KEY (`rid`),
+   KEY `fk_userid` (`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=5;
